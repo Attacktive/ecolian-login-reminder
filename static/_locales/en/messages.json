@@ -1,0 +1,10 @@
+{
+	"appName": {
+		"message": "Ecolian Login Reminder",
+		"description": "The name of the extension, displayed in the web store."
+	},
+	"appDesc": {
+		"message": "A simple reminder that makes you login before making a reservation.",
+		"description": "The description of the extension, displayed in the web store."
+	}
+}
