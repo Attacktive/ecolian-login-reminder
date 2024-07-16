@@ -11,7 +11,7 @@
 	"host_permissions": ["https://*.ecolian.or.kr/"],
 	"content_scripts": [
 		{
-			"matches": ["https://*.ecolian.or.kr/"],
+			"matches": ["https://*.ecolian.or.kr/reser/*"],
 			"js": ["js/content.js"]
 		}
 	],
