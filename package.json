@@ -19,7 +19,7 @@
 	},
 	"homepage": "https://github.com/Attacktive/ecolian-login-reminder#readme",
 	"devDependencies": {
-		"@types/chrome": "^0.0.263",
+		"@types/chrome": "^0.0.268",
 		"@types/eslint": "^8.56.6",
 		"@typescript-eslint/eslint-plugin": "^7.3.1",
 		"@typescript-eslint/parser": "^7.3.1",
