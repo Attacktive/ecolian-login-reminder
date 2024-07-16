@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "__MSG_appName__",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "__MSG_appDesc__",
 	"author": "Attacktive",
 	"homepage_url": "https://github.com/Attacktive/ecolian-login-reminder",
@@ -9,6 +9,12 @@
 	"incognito": "spanning",
 	"permissions": ["cookies", "tabs", "webNavigation"],
 	"host_permissions": ["https://*.ecolian.or.kr/"],
+	"content_scripts": [
+		{
+			"matches": ["https://*.ecolian.or.kr/"],
+			"js": ["js/content.js"]
+		}
+	],
 	"background": {
 		"service_worker": "js/service-worker.js",
 		"type": "module"
