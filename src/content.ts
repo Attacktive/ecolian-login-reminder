@@ -1,5 +1,5 @@
 const highlight = () => {
-	const timeGrid = document.querySelector("tbody#time-grid");
+	const timeGrid = document.querySelector("tbody#time-grid,tbody#time-grid-tablet");
 	if (timeGrid) {
 		const tds = timeGrid.querySelectorAll("td");
 		for (const td of tds.values()) {
