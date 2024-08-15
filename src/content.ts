@@ -8,12 +8,12 @@ const enhanceCell = (td: HTMLTableCellElement) => {
 				.filter(child => child !== anchor)
 				.forEach(child => parent.removeChild(child));
 
-			anchor.style["fontSize"] = "66px";
-			anchor.style["width"] = "100%";
-			anchor.style["height"] = "88px";
-			anchor.style["lineHeight"] = "88px";
-			anchor.style["margin"] = "0";
-			anchor.style["padding"] = "0";
+			anchor.style.fontSize = "66px";
+			anchor.style.width = "100%";
+			anchor.style.height = "88px";
+			anchor.style.lineHeight = "88px";
+			anchor.style.margin = "0";
+			anchor.style.padding = "0";
 		}
 	}
 };
@@ -23,7 +23,7 @@ const enhanceTable = () => {
 	if (timeGrid) {
 		const trs = timeGrid.querySelectorAll("tr");
 		for (const tr of trs.values()) {
-			tr.style["height"] = "88px";
+			tr.style.height = "88px";
 		}
 
 		const tds = timeGrid.querySelectorAll("td");
