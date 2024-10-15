@@ -1,6 +1,6 @@
 {
 	"name": "ecolian-login-reminder",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "A simple reminder that makes you login before making a reservation in Ecolian.",
 	"type": "module",
 	"scripts": {
