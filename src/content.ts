@@ -28,15 +28,16 @@ const enhanceTable = () => {
 
 		const tds = timeGrid.querySelectorAll("td");
 		for (const td of tds.values()) {
-			const textContent = td.textContent;
-			const match = /(\d{1,2})\s*홀/.exec(textContent ?? "");
-			if (match) {
-				const holes = parseInt(match[1]);
-				if (holes === 18) {
-					enhanceCell(td);
-				} else if (holes === 9) {
-					td.remove();
-				}
+			const match = /(\d{1,2})\s*홀/.exec(td.textContent ?? "");
+			if (!match) {
+				continue;
+			}
+
+			const holes = parseInt(match[1]);
+			if (holes === 18) {
+				enhanceCell(td);
+			} else if (holes === 9) {
+				td.remove();
 			}
 		}
 	}
