@@ -1,14 +1,14 @@
 {
 	"manifest_version": 3,
 	"name": "__MSG_appName__",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "__MSG_appDesc__",
 	"author": "Attacktive",
 	"homepage_url": "https://github.com/Attacktive/ecolian-login-reminder",
 	"default_locale": "en",
 	"incognito": "spanning",
 	"permissions": ["cookies", "tabs", "webNavigation"],
-	"host_permissions": ["https://*.ecolian.or.kr/"],
+	"host_permissions": ["https://*.ecolian.or.kr/", "https://*.geochang.go.kr/golf/reser/*"],
 	"content_scripts": [
 		{
 			"matches": ["https://*.ecolian.or.kr/reser/*"],
