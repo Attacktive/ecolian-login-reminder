@@ -24,7 +24,7 @@ jobs:
       - name: 'Archive Artifacts'
         run: 'zip ecolian-login-reminder.zip dist/* -r'
       - name: 'Create Release'
-        uses: 'softprops/action-gh-release@36833a1c712e139c96b443e3af070e95d9c0f193'
+        uses: 'softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631'
         with:
           prerelease: true
           generate_release_notes: true
