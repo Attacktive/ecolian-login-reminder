@@ -11,13 +11,14 @@ const sites: Site[] = [
 		cookieName: "sessionInfoJson",
 		urlContains: "/reser/",
 		redirectTo: "https://www.ecolian.or.kr/join/login.do"
-	},
-	{
+	}
+	// fixme: chrome.webNavigation.onBeforeNavigate event fires twice somehow. 🤷
+	/*{
 		cookieUrl: "https://www.geochang.go.kr",
 		cookieName: "sessionInfoJson",
 		urlContains: "/reser/",
 		redirectTo: "https://www.geochang.go.kr/golf/join/login.do"
-	}
+	}*/
 ];
 
 sites.forEach(({ cookieUrl, cookieName, urlContains, redirectTo }) => {
