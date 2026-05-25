@@ -8,10 +8,10 @@
 	"default_locale": "en",
 	"incognito": "spanning",
 	"permissions": ["cookies", "tabs", "webNavigation"],
-	"host_permissions": ["https://*.ecolian.or.kr/", "https://*.geochang.go.kr/golf/reser/*"],
+	"host_permissions": ["https://www.geochang.go.kr/golf/reservation/*"],
 	"content_scripts": [
 		{
-			"matches": ["https://*.ecolian.or.kr/reser/*"],
+			"matches": ["https://www.geochang.go.kr/golf/reservation/*"],
 			"js": ["js/content.js"]
 		}
 	],
