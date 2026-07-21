@@ -14,8 +14,8 @@ updates:
       - 'CI/CD'
     commit-message:
       prefix: 'ci'
-  - package-ecosystem: 'npm'
-    directory: '/' # Location of package manifests
+  - package-ecosystem: 'bun'
+    directory: '/'
     schedule:
       interval: 'daily'
       time: '00:00'
